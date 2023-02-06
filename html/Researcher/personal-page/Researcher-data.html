@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/Reasercher-data.css" />
+    <title>Researcher-data</title>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar">
+        <img src="../../../img/IsraUniversityLogo.png" alt="" class="logo" />
+        <nav>
+          <ul id="menue">
+            <li id="home"><a href="../../index.html">الرئيسية</a></li>
+            <li id="profile">
+              <a href="../personal-page/Researcher-data.html">الصفحة الشخصية</a>
+            </li>
+            <li id="explore"><a href="../Discover.html">اكتشاف</a></li>
+          </ul>
+        </nav>
+        <span
+          src="../../../img/IsraUniversityLogo.png"
+          class="icon"
+          onclick="Togglemenue()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <img src="../../../img/example.png" alt="" class="profile-pic" />
+      </div>
+    </div>
+    <script>
+      var menue = document.getElementById("menue");
+      menue.style.maxHeight = "0px";
+      function Togglemenue() {
+        if (menue.style.maxHeight == "0px") {
+          menue.style.maxHeight = "130px";
+        } else {
+          menue.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
